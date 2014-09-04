@@ -1,0 +1,73 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 3 (0x3)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=RO, ST=NA, L=Bucharest, O=UPB-Freescale, OU=fsl, CN=fsl-CA/name=fsl/emailAddress=balaban.valeriu90@gmail.com
+        Validity
+            Not Before: Aug  8 13:36:14 2014 GMT
+            Not After : Aug  5 13:36:14 2024 GMT
+        Subject: C=RO, ST=NA, L=Bucharest, O=UPB-Freescale, OU=fsl, CN=wandboard/name=fsl/emailAddress=balaban.valeriu90@gmail.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:b2:6b:ed:a1:e4:c8:1b:33:57:0e:e8:7c:84:fe:
+                    c1:96:6d:b1:4f:ca:42:e4:4a:0b:c5:07:29:0b:b5:
+                    f8:5b:a2:34:e8:24:07:a3:f0:5d:51:98:de:0f:47:
+                    6e:81:99:be:8b:d1:0d:e4:eb:c3:c7:c4:3a:79:16:
+                    04:ff:8f:4f:f8:b3:c3:37:7b:c8:db:87:c6:1c:1d:
+                    7c:0c:6a:89:4f:ff:b9:94:85:b8:94:8c:93:fa:8c:
+                    1b:9c:ce:fa:a8:19:2a:c3:93:46:20:49:3d:96:a7:
+                    73:79:bf:1c:4c:16:1e:e9:58:75:0c:5e:00:27:a8:
+                    f4:21:d3:10:9c:eb:14:62:89
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                4F:7E:28:66:63:29:56:5D:DC:B3:33:BD:A9:EF:C2:2F:F5:E9:A3:20
+            X509v3 Authority Key Identifier: 
+                keyid:85:86:11:18:58:60:E1:6F:96:08:AD:F6:3B:B9:6C:37:68:63:90:23
+                DirName:/C=RO/ST=NA/L=Bucharest/O=UPB-Freescale/OU=fsl/CN=fsl-CA/name=fsl/emailAddress=balaban.valeriu90@gmail.com
+                serial:DD:4E:7B:07:D6:4B:D0:5B
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+         32:93:e3:2f:df:eb:06:e7:29:f4:6c:66:47:01:58:13:7a:dc:
+         f2:45:fe:f6:19:52:39:3f:c1:fe:62:e6:94:c7:3e:91:55:ef:
+         55:df:34:e9:da:ad:34:d4:02:23:f7:dc:ed:50:8d:88:d2:52:
+         35:55:c9:9b:a8:d6:b4:cd:68:ce:90:70:66:b4:a3:7a:e7:b9:
+         f0:8f:e8:9e:e1:1a:78:89:22:7e:e3:87:c7:9a:f5:b7:18:d6:
+         72:00:04:34:55:e2:8a:72:d2:61:f9:34:2a:0e:99:cc:de:00:
+         b2:68:c6:46:e6:83:3e:48:52:f9:58:a8:4a:1b:24:37:ba:3c:
+         d2:71
+-----BEGIN CERTIFICATE-----
+MIIEETCCA3qgAwIBAgIBAzANBgkqhkiG9w0BAQUFADCBnzELMAkGA1UEBhMCUk8x
+CzAJBgNVBAgTAk5BMRIwEAYDVQQHEwlCdWNoYXJlc3QxFjAUBgNVBAoTDVVQQi1G
+cmVlc2NhbGUxDDAKBgNVBAsTA2ZzbDEPMA0GA1UEAxMGZnNsLUNBMQwwCgYDVQQp
+EwNmc2wxKjAoBgkqhkiG9w0BCQEWG2JhbGFiYW4udmFsZXJpdTkwQGdtYWlsLmNv
+bTAeFw0xNDA4MDgxMzM2MTRaFw0yNDA4MDUxMzM2MTRaMIGiMQswCQYDVQQGEwJS
+TzELMAkGA1UECBMCTkExEjAQBgNVBAcTCUJ1Y2hhcmVzdDEWMBQGA1UEChMNVVBC
+LUZyZWVzY2FsZTEMMAoGA1UECxMDZnNsMRIwEAYDVQQDEwl3YW5kYm9hcmQxDDAK
+BgNVBCkTA2ZzbDEqMCgGCSqGSIb3DQEJARYbYmFsYWJhbi52YWxlcml1OTBAZ21h
+aWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCya+2h5MgbM1cO6HyE
+/sGWbbFPykLkSgvFBykLtfhbojToJAej8F1RmN4PR26Bmb6L0Q3k68PHxDp5FgT/
+j0/4s8M3e8jbh8YcHXwMaolP/7mUhbiUjJP6jBuczvqoGSrDk0YgST2Wp3N5vxxM
+Fh7pWHUMXgAnqPQh0xCc6xRiiQIDAQABo4IBVjCCAVIwCQYDVR0TBAIwADAtBglg
+hkgBhvhCAQ0EIBYeRWFzeS1SU0EgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1Ud
+DgQWBBRPfihmYylWXdyzM72p78Iv9emjIDCB1AYDVR0jBIHMMIHJgBSFhhEYWGDh
+b5YIrfY7uWw3aGOQI6GBpaSBojCBnzELMAkGA1UEBhMCUk8xCzAJBgNVBAgTAk5B
+MRIwEAYDVQQHEwlCdWNoYXJlc3QxFjAUBgNVBAoTDVVQQi1GcmVlc2NhbGUxDDAK
+BgNVBAsTA2ZzbDEPMA0GA1UEAxMGZnNsLUNBMQwwCgYDVQQpEwNmc2wxKjAoBgkq
+hkiG9w0BCQEWG2JhbGFiYW4udmFsZXJpdTkwQGdtYWlsLmNvbYIJAN1OewfWS9Bb
+MBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1UdDwQEAwIHgDANBgkqhkiG9w0BAQUF
+AAOBgQAyk+Mv3+sG5yn0bGZHAVgTetzyRf72GVI5P8H+YuaUxz6RVe9V3zTp2q00
+1AIj99ztUI2I0lI1VcmbqNa0zWjOkHBmtKN657nwj+ie4Rp4iSJ+44fHmvW3GNZy
+AAQ0VeKKctJh+TQqDpnM3gCyaMZG5oM+SFL5WKhKGyQ3ujzScQ==
+-----END CERTIFICATE-----

@@ -1,0 +1,78 @@
+This README file contains information on the contents of the
+meta-evision layer.
+
+Please see the corresponding sections below for details.
+
+
+
+FAIL
+=====================
+
+-----------------
+COMMENT - https://groups.google.com/forum/#!topic/wandboard/fPf1fbEj9Io
+
+From what I understand this functionality is only supported on official Yocto kernel recipes, none of which are used in Freescale community BSP.
+Normally what I do is to create a new layer with a bbappend as Jakub mentions below.
+
+DOC - http://www.yoctoproject.org/docs/1.7/dev-manual/dev-manual.html#creating-config-fragments
+-------------
+
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: git://git.openembedded.org/bitbake
+  branch: master
+
+  URI: git://git.openembedded.org/openembedded-core
+  layers: meta
+  branch: master
+
+  URI: git://git.yoctoproject.org/xxxx
+  layers: xxxx
+  branch: master
+
+
+Patches
+=======
+
+Please submit any patches against the evision layer to the
+xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
+
+Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+
+
+Table of Contents
+=================
+
+  I. Adding the evision layer to your build
+ II. Misc
+
+
+I. Adding the evision layer to your build
+=================================================
+
+--- replace with specific instructions for the evision layer ---
+
+In order to use this layer, you need to make the build system aware of
+it.
+
+Assuming the evision layer exists at the top-level of your
+yocto build tree, you can add it to the build system by adding the
+location of the evision layer to bblayers.conf, along with any
+other layers needed. e.g.:
+
+  BBLAYERS ?= " \
+    /path/to/yocto/meta \
+    /path/to/yocto/meta-yocto \
+    /path/to/yocto/meta-yocto-bsp \
+    /path/to/yocto/meta-evision \
+    "
+
+
+II. Misc
+========
+
+--- replace with specific information about the evision layer ---
