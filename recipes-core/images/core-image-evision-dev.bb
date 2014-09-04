@@ -41,6 +41,7 @@ IMAGE_INSTALL += " \
 	openvpn \
 	openvpn-config \
 	nfs-utils \
+	git \
 "
 
 EXTRA_IMAGE_FEATURES += " \
