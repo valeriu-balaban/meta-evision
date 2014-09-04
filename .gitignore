@@ -1,0 +1,2 @@
+# ignore secure key files
+*.key
