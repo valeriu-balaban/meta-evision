@@ -13,7 +13,8 @@ SRC_URI = "file://client.conf \
 do_install () {
 
 	install -d ${D}${sysconfdir}/openvpn
-	install -m 0644 ${WORKDIR}/client.conf ${D}${sysconfdir}/openvpn
+	install -m 0644 ${WORKDIR}/client-main.conf ${D}${sysconfdir}/openvpn
+	install -m 0644 ${WORKDIR}/client-backup.conf ${D}${sysconfdir}/openvpn
 
  	install -d ${D}${sysconfdir}/openvpn/easy-rsa
  	install -d ${D}${sysconfdir}/openvpn/easy-rsa/keys
