@@ -43,6 +43,7 @@ IMAGE_INSTALL += " \
 	nfs-utils \
 	dhcp-client \
 	cronie \
+	tzdata \
 	git \
 "
 

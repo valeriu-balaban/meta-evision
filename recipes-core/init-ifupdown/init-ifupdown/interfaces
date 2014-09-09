@@ -7,8 +7,9 @@ iface lo inet loopback
 # Wireless interfaces
 auto wlan0
 iface wlan0 inet dhcp
+	post-up dhclient
 	wpa-conf /etc/wpa_supplicant.conf
-
+	
 # Wired interfaces
 #auto eth0
 iface eth0 inet dhcp
