@@ -44,6 +44,14 @@ IMAGE_INSTALL += " \
 	git \
 "
 
+# For profiling
+
 EXTRA_IMAGE_FEATURES += " \
+	debug-tweaks \
+	tools-profile \
 	tools-debug \
 "
+
+INHIBIT_PACKAGE_STRIP = "1"
+
+PACKAGE_DEBUG_SPLIT_STYLE = 'debug-file-directory'
