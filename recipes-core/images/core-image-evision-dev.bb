@@ -40,6 +40,7 @@ IMAGE_INSTALL += " \
 	wpa-supplicant \
 	openvpn \
 	openvpn-config \
+	board-config \
 	nfs-utils \
 	dhcp-client \
 	cronie \

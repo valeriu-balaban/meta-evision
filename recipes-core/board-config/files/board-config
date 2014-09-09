@@ -1,0 +1,37 @@
+#!/bin/bash 
+
+# Welcome message
+echo "This is an initialisation script for eVision Linux."
+echo "It should be called only once on a fresh yocto image."
+
+read -p "Should we continue? [y/n]:" -n 1 -r
+echo    # move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+
+    # add openvpn to startup
+    echo "Adding openvpn for autostartup"
+    ln -s /etc/init.d/openvpn /etc/rc5.d/S91openvpn
+    ln -s /etc/init.d/openvpn /etc/rc3.d/S91openvpn
+    sleep 1
+    
+    echo "Setting wifi password"
+    wpa_passphrase Freescale FreescaleCUP > /etc/wpa_supplicant.conf
+    sleep 1
+    
+    echo "Adding 8.8.8.8 nameserver"
+    echo "prepend domain-name-servers 8.8.8.8;" >> /etc/dhcp/dhclient.conf 
+    sleep 1
+    
+    echo "Setting uptime tracker"
+    echo "*/1 * * * * date >> /var/timelog" >> /etc/crontab
+    sleep 1
+    
+    echo "Configuring timezone"
+    ln -sf /usr/share/zoneinfo/Europe/Bucharest /etc/localtime
+    sleep 1
+    
+    echo "Getting application from github"
+    git clone https://github.com/izzi/app-evision.git /home/root/app
+    sleep 1
+fi
