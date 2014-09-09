@@ -41,6 +41,8 @@ IMAGE_INSTALL += " \
 	openvpn \
 	openvpn-config \
 	nfs-utils \
+	dhcp-client \
+	cronie \
 	git \
 "
 
