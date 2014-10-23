@@ -8,7 +8,8 @@ SRC_URI = "file://board-config"
 
 do_install () {
 
-	install -m 0755 ${WORKDIR}/board-config ${D}${base_bindir}/
+	install -d ${D}${bindir}
+	install -m 0755 ${WORKDIR}/board-config ${D}${bindir}/
 
 }
 

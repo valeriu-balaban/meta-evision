@@ -20,16 +20,29 @@ then
     sleep 1
     
     echo "Adding 8.8.8.8 nameserver"
-    echo "prepend domain-name-servers 8.8.8.8;" >> /etc/dhcp/dhclient.conf 
+    echo "prepend domain-name-servers 8.8.8.8;" >> /etc/dhcp/dhclient.conf
+    /etc/init.d/networking restart
     sleep 1
     
     echo "Setting uptime tracker"
-    echo "*/1 * * * * date >> /var/timelog" >> /etc/crontab
+    crontab -l | { cat; echo "*/1 * * * * date >> /var/timelog"; } | crontab -
     sleep 1
     
     echo "Configuring timezone"
-    ln -sf /usr/share/zoneinfo/Europe/Bucharest /etc/localtime
+    ln -sf /usr/share/zoneinfo/EET /etc/localtime
     sleep 1
+    
+    echo "Configuring time sincronization"
+    echo "driftfile /etc/ntp.drift" >  /etc/ntp.conf
+    echo "server 0.ro.pool.ntp.org" >> /etc/ntp.conf
+    echo "server 1.ro.pool.ntp.org" >> /etc/ntp.conf
+    echo "server 2.ro.pool.ntp.org" >> /etc/ntp.conf
+    echo "server 3.ro.pool.ntp.org" >> /etc/ntp.conf
+    echo "server  127.127.1.0" 		>> /etc/ntp.conf
+	echo "fudge   127.127.1.0 stratum 10" >> /etc/ntp.conf
+	echo "restrict default" >> /etc/ntp.conf
+	ntpd -q -g -x
+	sleep 1
     
     echo "Getting application from github"
     git clone https://github.com/izzi/app-evision.git /home/root/app

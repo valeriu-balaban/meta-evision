@@ -46,6 +46,9 @@ IMAGE_INSTALL += " \
 	cronie \
 	tzdata \
 	git \
+	ntp \
+	xserver-xorg \
+	xauth \
 "
 
 # For profiling

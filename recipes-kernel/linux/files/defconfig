@@ -367,3 +367,6 @@ CONFIG_USB_PWC_DEBUG=y
 CONFIG_USB_PWC_INPUT_EVDEV=y
 # new config for openvpn
 CONFIG_TUN=y
+# config for profiling
+CONFIG_PROFILING=y
+CONFIG_OPROFILE=y
